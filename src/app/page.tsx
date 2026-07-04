@@ -21,9 +21,9 @@ import { useStackCards } from "@/hooks/useStackCards";
 import { useMagneticButtons } from "@/hooks/useMagneticButtons";
 
 const HERO_CARDS: DragCardProps[] = [
-  { className: "c1", style: { left: "8%", top: "12%" }, icon: "$", value: "200+", label: "users on live billing" },
-  { className: "c2", style: { left: "42%", top: "28%" }, icon: "⚡", value: "45%", label: "faster response time" },
-  { className: "c3", style: { left: "14%", top: "58%" }, icon: "▣", value: "3", label: "production apps shipped" },
+  { className: "c1", style: { left: "8%", top: "12%" }, icon: "▣", value: "Audit", label: "AidenVision — reporting module" },
+  { className: "c2", style: { left: "42%", top: "28%" }, icon: "$", value: "Billing", label: "AnaYAna — Stripe & workflow" },
+  { className: "c3", style: { left: "14%", top: "58%" }, icon: "◆", value: "AI Chat", label: "Investilo — stock chatbot" },
   { className: "c4", style: { left: "50%", top: "62%" }, icon: "☁", value: "Azure", label: "+ Docker, deployed solo" },
 ];
 
@@ -58,14 +58,14 @@ const PROJECTS = [
     description: "A compliance platform connecting businesses and accountants through automated workflow management.",
     bullets: (
       <>
-        <li>Integrated Stripe for subscription billing, serving 200+ active users.</li>
-        <li>Optimized the Supabase schema, cutting query time by 50%.</li>
+        <li>Integrated Stripe for subscription billing across the platform.</li>
+        <li>Designed and optimized the Supabase schema powering the workflow engine.</li>
         <li>Implemented real-time notifications and document management features.</li>
       </>
     ),
     tags: ["Next.js", "Node.js", "Supabase", "Stripe", "TypeScript"],
-    impactLabel: "QUERY TIME REDUCED",
-    impactValue: 50,
+    impactLabel: "STRIPE BILLING · REAL-TIME",
+    impactValue: 85,
   },
   {
     num: "03",
@@ -190,16 +190,16 @@ export default function Home() {
               <>
                 <li>Worked across multiple client projects end-to-end — frontend interfaces, backend APIs, and production deployments.</li>
                 <li>Handled cloud deployments on Azure VM with Docker containerization, managing the full application lifecycle.</li>
-                <li>Implemented Stripe payment infrastructure handling subscription and transaction management for 200+ users.</li>
+                <li>Implemented Stripe payment infrastructure handling subscription and transaction management.</li>
                 <li>Built an AI-powered chatbot using Agno Agent with real-time web crawling, deployed on Azure VM via Docker.</li>
                 <li>Engineered vector similarity search integrated with the OpenAI API for an intelligent recommendation engine.</li>
-                <li>Optimized database queries and caching strategies, improving application response time by 45%.</li>
+                <li>Optimized database queries and caching strategies to keep applications fast as data grows.</li>
               </>
             }
             stats={[
-              { value: "200+", label: "users on Stripe billing" },
-              { value: "45%", label: "faster response time" },
               { value: "3", label: "client projects delivered" },
+              { value: "5", label: "report types on AidenVision" },
+              { value: "1+", label: "years shipping production" },
             ]}
           />
         </div>
